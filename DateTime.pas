@@ -10,3 +10,13 @@ function LaterInYear(d1, d2: DateTime): Integer;
 Begin
   var d := DateTime.Now;
 end;
+
+function DaysInYear(Year : Integer): Integer;
+Begin
+  var a : Integer;
+  if IsLeapYear(Year) then
+    a := 366
+  else
+    a := 365;
+  result := a;
+end;
