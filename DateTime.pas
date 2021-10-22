@@ -36,6 +36,11 @@ begin
   result := sumd;
 end;
 
+function SeconsInHours(h:integer):integer;
+begin
+  h := h*sqr(60);
+end;
+
 begin
   
 end.
